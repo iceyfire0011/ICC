@@ -15,8 +15,8 @@ public class MatchResult extends BaseModel{
     @JoinColumn(name = "matchId")
     private Match match;
     @ManyToOne(fetch= FetchType.LAZY)
-    @JoinColumn(name = "teamId")
-    private Team team;
+    @JoinColumn(name = "squadId")
+    private Squad squad;
     private ResultConstant result;
     private float point;
 }
