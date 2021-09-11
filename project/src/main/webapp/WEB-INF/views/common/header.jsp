@@ -12,6 +12,6 @@
     <title>ICC</title>
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet"
-          href="${pageContext.request.contextPath }/css/bootstrap/bootstrap.min.css"/>
+          href="${pageContext.request.contextPath }/css/bootstrap/bootstrap.css"/>
 </head>
 <body>
