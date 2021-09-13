@@ -1,6 +1,7 @@
 package com.icc.dto;
 
 import lombok.Data;
+import lombok.Generated;
 
 import java.sql.Timestamp;
 import java.util.UUID;

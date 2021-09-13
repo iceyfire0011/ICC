@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+<h1>Hello</h1>
+<!--<div class="container my-3">-->
+<!--    <div class="row">-->
+<!--        <div class="col-md-8 mx-auto">-->
+<!--            <h2>User Registration</h2>-->
+<!--            <form th:action="@{/save}" th:object="${user}" method="post">-->
+<!--                <div class="form-row">-->
+<!--                    <div class="col-md-6 form-group">-->
+<!--                        <label>ID</label>-->
+<!--                        <input type="number" class="form-control" th:field="*{id}">-->
+<!--                    </div>-->
+<!--                    <div class="col-md-6 form-group">-->
+<!--                        <label>Name</label>-->
+<!--                        <input type="text" class="form-control" th:field="*{fullName}">-->
+<!--                    </div>-->
+<!--                    <div class="col-md-6 form-group">-->
+<!--                        <label>Department</label>-->
+<!--                        <select class="form-control" th:field="*{country}">-->
+<!--                            <option th:value="" th:text="&#45;&#45; Select &#45;&#45;"></option>-->
+<!--                            <option th:each="i : ${user.countryList}" th:value="${i.getCountryName()}" th:text="${i.getCountryText()}"></option>-->
+<!--                        </select>-->
+<!--                    </div>-->
+<!--&lt;!&ndash;                    <div class="col-md-6 form-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <label>Age</label>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <input type="number" step="any" class="form-control" th:field="*{age}">&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <div class="col-md-6 form-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <strong>Gender</strong>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="form-check form-check-inline">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <input class="form-check-input" type="radio" th:field="*{gender}" id="option1" value="Male">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <label class="form-check-label" for="option1">Male</label>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="form-check form-check-inline">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <input class="form-check-input" type="radio" th:field="*{gender}" id="option2"&ndash;&gt;-->
+<!--&lt;!&ndash;                                   value="Female">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <label class="form-check-label" for="option2">Female</label>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="col-md-6 form-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="col-md-6 form-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <label>Joining Date</label>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <input type="text" class="form-control" placeholder="yyyy-MM-dd" id="join_datepicker"&ndash;&gt;-->
+<!--&lt;!&ndash;                               th:field="*{joiningDate}">&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="col-md-6 form-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <label>Retiring Date</label>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <input type="text" class="form-control" placeholder="yyyy-MM-dd" id="retire_datepicker"&ndash;&gt;-->
+<!--&lt;!&ndash;                               th:field="*{retiringDate}">&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--                </div>-->
+<!--                <button type="submit" class="btn btn-primary btn-block mt-3">Save</button>-->
+<!--            </form>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+    $(function () {
+        $("#join_datepicker").datepicker({dateFormat: "yy-mm-dd"});
+        $("#retire_datepicker").datepicker({dateFormat: "yy-mm-dd"});
+    });
+</script>
+</body>
+</html>

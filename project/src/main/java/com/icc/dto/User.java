@@ -1,12 +1,14 @@
 package com.icc.dto;
 
-import com.icc.model.Country;
+
 import lombok.Data;
+import lombok.Generated;
 
 import java.sql.Timestamp;
+import java.util.List;
 
 @Data
-public class User{
+public class User extends BaseDTO{
     private String username;
     private String password;
     private String fullName;
@@ -16,4 +18,5 @@ public class User{
     private String role;
     private Timestamp dateOfBirth;
     private Country country;
+    private List<Country> countryList;
 }
